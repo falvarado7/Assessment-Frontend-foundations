@@ -31,8 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 450px;
-  padding-bottom: 20px;
+  width: 100%;
 }
 
 /* ---  Groups & Items ---*/
@@ -49,6 +48,7 @@ main img {
 
 .item-double {
   flex: 2;
+  margin: 10px;
 }
 
 /* -------  Navigation -------*/ 
@@ -87,24 +87,20 @@ header nav ul li a:hover {
 /* -------  Search Form -------*/ 
 form {
   border: 2px solid #ff385c;
-  padding: 12px;
-  
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 form label {
   font-weight: bold;
-}
-
-form select,
-form input {
-  margin-bottom: 20px;
-  width: 220px;
+  padding-right: 10px;
 }
 
 .form-row {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
 }
 
 form button {
@@ -112,7 +108,7 @@ form button {
   border: none;
   color: #fff;
   font-size: 24px;
-  padding: 25px;
+  padding: 15px;
   width: 100%;
   
 }
@@ -131,7 +127,7 @@ footer p {
 
 /* -------  Media Query -------*/
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1000px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -140,39 +136,52 @@ footer p {
 
   form {
     display: flex;
-    align-items: center; 
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 10px 10px 10px; 
   }
 
   form button {
-    width: 20%;
-    margin-left: 70px;
+    justify-content: center;
   }
 
-  form label,
-  form input,
-  form button {
-    margin-right: 20px;
+  form div {
+    display: flex;
+    flex-direction: column;
   }
 
-  .about-section {
-   display: flex; 
-   align-items: center;
-   
+  .form-row {
+    padding-right: 25px;
+    justify-content: center;
+  }
+
+  form label {
+    padding-bottom: 15px;
+    font-weight: bold;
   }
 
   .group {
+    align-items: center;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: row;
   }
 
   .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    flex: 1;
+    margin: 15px;
   }
 
+  .item-double {
+    flex: 2;
+    margin: 15px;
+  }
+
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   
 }
 
