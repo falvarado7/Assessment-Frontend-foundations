@@ -93,7 +93,7 @@ form {
 
 form label {
   font-weight: bold;
-  padding-bottom: 5px;
+  display: flex;
 }
 
 form select, form input {
@@ -156,7 +156,6 @@ footer p {
   }
 
   form label {
-    padding-bottom: 15px;
     font-weight: bold;
   }
 
